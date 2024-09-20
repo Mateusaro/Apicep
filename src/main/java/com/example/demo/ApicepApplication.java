@@ -19,13 +19,12 @@ public class ApicepApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Endereco endereco = new Endereco();
-		endereco.setCep("22775046");  // Aqui você define explicitamente o valor do CEP
+		endereco.setCep("22775046");
 		endereco.setLogradouro("Avenida das Américas");
 		endereco.setBairro("Barra da Tijuca");
 		endereco.setLocalidade("Rio de Janeiro");
 		endereco.setUf("RJ");
 
-		// Salvar no banco de dados H2
 		enderecoRepository.save(endereco);
 
 		System.out.println("Dados de CEP mockados adicionados ao H2.");

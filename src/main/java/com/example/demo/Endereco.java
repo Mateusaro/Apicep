@@ -13,7 +13,6 @@ public class Endereco {
     private String localidade;
     private String uf;
 
-    // Getters e Setters
     public String getCep() { return cep; }
     public void setCep(String cep) { this.cep = cep; }
 
